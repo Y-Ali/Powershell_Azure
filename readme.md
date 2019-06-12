@@ -1,4 +1,6 @@
-Azure Steps:
+##CI-CD-CD with Azure Devops 
+
+Steps:
 
 1. Create a new project.
 
@@ -11,6 +13,7 @@ Azure Steps:
 5. In Powershell: `cd` into your project folder. Then in the ‘repositories’ tab (in Azure DevOps) copy the HTTPS commands into powershell. 
 
 For example:
+
 `git remote add origin https://yousufali@dev.azure.com/yousufali/Student%20Portal%20Project/_git/Student%Portal%20Project`
 
 `git add .`
