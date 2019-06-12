@@ -1,4 +1,4 @@
-## CI-CD-CD with Azure Devops 
+## CI-CD-CD with Azure Devops for ASP.NetCore Web Application
 
 Steps:
 
@@ -21,4 +21,9 @@ For example:
 `git commit -m “first commit”`
 
 `git push origin master`
+
+6. Refresh your Azure Devops page. In your repositories, you should now see your project files.
+
+7. Select Pipelines > Builds 
+
 
