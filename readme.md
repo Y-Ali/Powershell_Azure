@@ -37,14 +37,17 @@ Steps:
 12. To have a web app in Azure, we need 3 things: a resource group, a resource plan, and a web app.
 
 13. First create a resource group. In powershshell type:
+
 	`az group create —name projectresourcegroup —location eastus`
       
 14. This will create a resource group called projectresourcegroup, in the location eastus.
 
 15. Second, create a plan. In powershelgl type:
+
 	`az appservice plan create —name resourceplan —resource-group projectresourcegroup —sku FREE`
 	
 16. Finally we need a  webapp:
+
 	`az webapp create —name projectwebapp —resource-group projectresourcegroup —plan resourceplan`
 
 
