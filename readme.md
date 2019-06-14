@@ -26,4 +26,13 @@ Steps:
 
 7. Select Pipelines > Builds 
 
+8. Select Azure Reps and select your repository.
+
+9. Choose Template: ASP.Net Core, or the template you need for your project.
+
+10. You should see a azure-pipelines.yml file. For now keep this as default as this is enough for a build. 
+
+11. Save and run.
+
+ 
 
