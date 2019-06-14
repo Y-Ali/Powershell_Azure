@@ -41,5 +41,12 @@ Steps:
       
 14. This will create a resource group called projectresourcegroup, in the location eastus.
 
+15. Second, create a plan. In powershelgl type:
+	`az appservice plan create —name resourceplan —resource-group projectresourcegroup —sku FREE`
+	
+16. Finally we need a  webapp:
+	`az webapp create —name projectwebapp —resource-group projectresourcegroup —plan resourceplan`
+
+
  
 
