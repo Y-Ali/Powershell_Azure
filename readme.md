@@ -50,6 +50,7 @@ Steps:
 
 	`az webapp create —name projectwebapp —resource-group projectresourcegroup —plan resourceplan`
 
+17. Now, if you go to Microsoft Azure, you should see those 3 things created.
 
  
 
