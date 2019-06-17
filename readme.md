@@ -52,5 +52,5 @@ Steps:
 
 17. Now, if you go to Microsoft Azure, you should see those 3 things created.
 
- 
+18. Next
 
