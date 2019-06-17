@@ -42,7 +42,7 @@ Steps:
       
 14. This will create a resource group called projectresourcegroup, in the location eastus.
 
-15. Second, create a plan. In powershelgl type:
+15. To create a plan, In powershell type:
 
 	`az appservice plan create —name resourceplan —resource-group projectresourcegroup —sku FREE`
 	
