@@ -50,7 +50,18 @@ Steps:
 
 	`az webapp create —name projectwebapp —resource-group projectresourcegroup —plan resourceplan`
 
-17. Now, if you go to Microsoft Azure, you should see those 3 things created.
+17. If you go to Microsoft Azure, you should see those 3 things created.
 
-18. Next
+18. Great! Now let's go change that YAML file that was created ealier. We need to add tasks that will 'package' our files, create a zip, and then move those files to our artefact folder.
+
+`- task: DotNetCoreCLI@2
+  displayName: 'Dotnet Publish'
+  inputs:
+    command: publish
+    publishWebProjects: True
+    arguments: '--configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)'
+    zipAfterPublish: True`
+
+`- task: PublishBuildArtifacts@1
+  displayName: 'Publish Build Artifacts'`
 
