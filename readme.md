@@ -55,11 +55,17 @@ Steps:
 18. Great! Now let's go change that YAML file that was created ealier. We need to add tasks that will 'package' our files, create a zip, and then move those files to our artefact folder.
 
 `- task: DotNetCoreCLI@2
+
   displayName: 'Dotnet Publish'
-  inputs:
+
+inputs:
+    
     command: publish
+    
     publishWebProjects: True
+    
     arguments: '--configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)'
+    
     zipAfterPublish: True`
 
 `- task: PublishBuildArtifacts@1
