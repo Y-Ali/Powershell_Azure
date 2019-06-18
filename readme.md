@@ -52,22 +52,6 @@ Steps:
 
 17. If you go to Microsoft Azure, you should see those 3 things created.
 
-18. Great! Now let's go change that YAML file that was created ealier. We need to add tasks that will 'package' our files, create a zip, and then move those files to our artefact folder.
+18. Great! Now let's go change that YAML file that was created ealier. We need to add tasks that will 'package' our files, create a zip, and then move those files to our artefact folder. In this repository copy from lines 1 - 23.
 
-`- task: DotNetCoreCLI@2
-
-  displayName: 'Dotnet Publish'
-
-inputs:
-    
-    command: publish
-    
-    publishWebProjects: True
-    
-    arguments: '--configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)'
-    
-    zipAfterPublish: True`
-
-`- task: PublishBuildArtifacts@1
-  displayName: 'Publish Build Artifacts'`
 
